@@ -1,0 +1,10 @@
+{
+  "name": "julesfpv-storefront",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "concurrently -k \"node server/index.js\" \"vite --host 0.0.0.0\"", "start": "node server/index.js", "build": "vite build", "preview": "vite preview" },
+  "dependencies": { "bcryptjs": "^2.4.3", "cloudinary": "^2.5.1", "dotenv": "^16.4.7", "express": "^4.21.2", "express-rate-limit": "^7.5.0", "firebase-admin": "^13.0.2", "helmet": "^8.0.0", "jsonwebtoken": "^9.0.2", "multer": "^2.0.2" },
+  "devDependencies": { "concurrently": "^9.1.2", "vite": "^6.0.0" },
+  "overrides": { "uuid": "^11.1.1" }
+}
