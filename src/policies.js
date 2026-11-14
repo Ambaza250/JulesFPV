@@ -7,7 +7,7 @@ export const policyPages = {
       ['Products and prices', 'Product availability and prices are shown in Rwandan francs (RWF). Availability can change before an order is verified. The store will contact you if an item becomes unavailable or an order detail needs clarification.'],
       ['Orders and payment', 'Submitting an order and payment screenshot creates an order awaiting review. The order is confirmed for fulfillment only after the store verifies the payment. Please submit a clear, genuine proof of payment.'],
       ['Delivery and pickup', 'Choose delivery or customer pickup at checkout. Delivery requires a usable address. The store will confirm delivery arrangements or pickup instructions after reviewing your order.'],
-      ['Contact', 'For questions about an order or these terms, contact hello@julesfpv.com.']
+      ['Contact', 'For questions about an order or these terms, contact uwayezurw@gmail.com.']
     ]
   },
   '/privacy': {
@@ -18,7 +18,7 @@ export const policyPages = {
       ['How we use information', 'We use this information to manage your account, review payment, prepare orders, arrange delivery or pickup, and respond to support requests.'],
       ['Service providers and storage', 'Account and order records are stored using Firebase/Firestore. Payment proof images are stored as private media in Cloudinary and can be viewed by authorized store administrators. These providers process data to provide the store services.'],
       ['Sharing and retention', 'JulesFPV does not sell customer information. Information is shared with service providers needed to operate the store and retained while needed to manage orders, accounts, and applicable recordkeeping.'],
-      ['Your choices', 'For a copy or correction of your account information, or a privacy request, contact hello@julesfpv.com.']
+      ['Your choices', 'For a copy or correction of your account information, or a privacy request, contact uwayezurw@gmail.com.']
     ]
   },
   '/about': {
@@ -27,7 +27,7 @@ export const policyPages = {
     sections: [
       ['Built for FPV builders', 'JulesFPV is an FPV parts shop based in Kigali, Rwanda. We bring together frames, motors, electronics, video systems, and batteries for people building and flying FPV drones.'],
       ['Find your next part', 'Browse the catalog, compare the available options, and reach out if you need help choosing parts for a build. Orders can be delivered or collected by the customer.'],
-      ['Get in touch', 'Questions about a product or an order? Email hello@julesfpv.com.']
+      ['Get in touch', 'Questions about a product or an order? Email uwayezurw@gmail.com.']
     ]
   },
   '/delivery-payment': {
@@ -38,7 +38,7 @@ export const policyPages = {
       ['Customer pickup', 'Select I’ll pick it up at checkout. No delivery address is needed. Pickup instructions and collection timing will be confirmed after payment review.'],
       ['Payment methods', 'Choose the Mobile Money number, Mobile Money code, or Bank of Kigali account shown at checkout. All accounts are registered to Jules UWAYEZU. Upload a clear screenshot of the completed payment; the order remains pending until the team verifies it.'],
       ['Payment instructions', '<div id="policyPaymentInstructions" class="policy-payment-details">Choose a payment method at checkout to view its details.</div>'],
-      ['Questions', 'For help with delivery, pickup, or payment, contact hello@julesfpv.com.']
+      ['Questions', 'For help with delivery, pickup, or payment, contact uwayezurw@gmail.com.']
     ],
     loadPaymentInstructions: true
   }
