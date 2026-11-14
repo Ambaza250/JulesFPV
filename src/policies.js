@@ -36,8 +36,8 @@ export const policyPages = {
     sections: [
       ['Delivery', 'Select Delivery and enter a complete address at checkout. The store will confirm the delivery arrangement, any applicable charge, and timing when reviewing the order.'],
       ['Customer pickup', 'Select I’ll pick it up at checkout. No delivery address is needed. Pickup instructions and collection timing will be confirmed after payment review.'],
-      ['Mobile Money payment', 'Use the Mobile Money instructions shown during checkout, then upload a clear screenshot of the completed payment. The order remains pending until the team verifies the screenshot.'],
-      ['Payment instructions', '<div id="policyPaymentInstructions" class="policy-payment-details">Loading payment instructions…</div>'],
+      ['Payment methods', 'Choose the Mobile Money number, Mobile Money code, or Bank of Kigali account shown at checkout. All accounts are registered to Jules UWAYEZU. Upload a clear screenshot of the completed payment; the order remains pending until the team verifies it.'],
+      ['Payment instructions', '<div id="policyPaymentInstructions" class="policy-payment-details">Choose a payment method at checkout to view its details.</div>'],
       ['Questions', 'For help with delivery, pickup, or payment, contact hello@julesfpv.com.']
     ],
     loadPaymentInstructions: true
