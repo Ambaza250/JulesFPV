@@ -1,4 +1,15 @@
 export const policyPages = {
+  '/promise': {
+    title: 'The JulesFPV Promise',
+    intro: 'Choosing parts for a build should feel exciting, not uncertain. We are here to make every step from choosing gear to getting it in the air feel clearer.',
+    sections: [
+      ['Pilot-picked gear', 'We choose parts with real FPV builds in mind. Our catalog focuses on gear that has a clear purpose, dependable performance, and a place in the kind of flying our community loves.'],
+      ['Advice from people who fly', 'Every build is different. Tell us what you are building, where you fly, or what you are trying to solve, and we will help you make a considered choice.'],
+      ['Care from Kigali', 'Your gear is packed with care and prepared for delivery or pickup. We will help you understand the available options and keep you informed as your order moves forward.'],
+      ['Here when you need us', 'Questions before or after your order? Reach out to our team. We want you to feel supported, make confident decisions, and get back to the part that matters: flying.']
+    ],
+    shopCta: true
+  },
   '/terms': {
     title: 'Terms of Service',
     intro: 'These terms explain the basic rules for using JulesFPV and placing an order.',
@@ -45,7 +56,7 @@ export const policyPages = {
 };
 
 export function renderInfoPage(root, page) {
-  root.innerHTML = `<a class="info-back" href="/">← Back to JulesFPV</a><article class="info-document"><span class="eyebrow">JULESFPV · INFORMATION</span><h1>${escapeHtml(page.title)}</h1><p class="info-intro">${escapeHtml(page.intro)}</p><div class="info-sections">${page.sections.map(([heading, body]) => `<section><h2>${escapeHtml(heading)}</h2>${heading === 'Payment instructions' ? body : `<p>${escapeHtml(body)}</p>`}</section>`).join('')}</div></article>`;
+  root.innerHTML = `<a class="info-back" href="/">← Back to JulesFPV</a><article class="info-document"><span class="eyebrow">JULESFPV · INFORMATION</span><h1>${escapeHtml(page.title)}</h1><p class="info-intro">${escapeHtml(page.intro)}</p><div class="info-sections">${page.sections.map(([heading, body]) => `<section><h2>${escapeHtml(heading)}</h2>${heading === 'Payment instructions' ? body : `<p>${escapeHtml(body)}</p>`}</section>`).join('')}</div>${page.shopCta ? `<div class="promise-shop-cta"><a class="button button-dark" href="/shop">Go to the shop and explore <span>→</span></a></div>` : ''}</article>`;
 }
 
 function escapeHtml(value) {
