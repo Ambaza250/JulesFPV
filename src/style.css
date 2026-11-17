@@ -56,6 +56,20 @@
 #supportWidget:not([hidden]) .support-panel{transform-origin:bottom right}
 @media(max-width:700px){#supportWidget:not([hidden]){left:auto!important;right:12px!important}#supportPage:not(.admin-support-page) #supportPageMessages{padding:14px}#supportPage:not(.admin-support-page) #supportPageForm{padding:10px}#supportPage:not(.admin-support-page) #supportPageForm textarea{min-height:58px}}
 
+.social-contact-dock{position:fixed;z-index:9998;right:22px;bottom:80px;display:flex;flex-direction:column;gap:9px}
+.social-contact-dock a{width:46px;height:46px;display:grid;place-items:center;border:1px solid #d7dfeb;border-radius:50%;background:#fff;color:#174bd1;box-shadow:0 5px 18px #102c6833;transition:transform .16s,background .16s,color .16s,border-color .16s}
+.social-contact-dock a:hover,.social-contact-dock a:focus-visible{transform:translateY(-2px);background:#174bd1;color:#fff;border-color:#174bd1;outline:0}
+.social-contact-dock a:focus-visible{box-shadow:0 0 0 3px #174bd144,0 5px 18px #102c6833}
+.social-contact-dock svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.social-contact-dock svg .icon-fill{fill:currentColor;stroke:none}
+.social-contact-dock a[aria-label="Instagram"],.social-contact-dock a[aria-label="Instagram"]:hover,.social-contact-dock a[aria-label="Instagram"]:focus-visible{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);border-color:#d6249f;color:#fff}
+.social-contact-dock a[aria-label="Facebook"],.social-contact-dock a[aria-label="Facebook"]:hover,.social-contact-dock a[aria-label="Facebook"]:focus-visible{background:#1877f2;border-color:#1877f2;color:#fff}
+.social-contact-dock a[aria-label="Facebook"] svg{width:25px;height:25px}
+.social-contact-dock a.whatsapp-contact,.social-contact-dock a.whatsapp-contact:hover,.social-contact-dock a.whatsapp-contact:focus-visible{background:#25d366;border-color:#25d366;color:#fff}
+.social-contact-dock .whatsapp-bubble{stroke-width:1.8}
+.social-contact-dock .whatsapp-phone{fill:currentColor;stroke:none}
+@media(max-width:700px){.social-contact-dock{right:12px;bottom:68px;gap:8px}.social-contact-dock a{width:42px;height:42px}.social-contact-dock svg{width:21px;height:21px}}
+
 .promise-shop-cta{display:flex;justify-content:center;margin-top:34px;padding-top:24px;border-top:1px solid #d5deeb}.promise-shop-cta .button{background:#174bd1;border:1.5px solid #123ba9;color:#fff}
 
 .admin-edit-modal{width:min(880px,calc(100% - 28px))}.admin-edit-form{display:grid;grid-template-columns:minmax(220px,.85fr) minmax(0,1.5fr);gap:20px}.admin-edit-preview{display:flex;flex-direction:column;gap:12px;align-items:stretch}.admin-edit-preview img{width:100%;height:255px;object-fit:contain;background:#f3f5f8;border:1px solid #d5deeb;border-radius:9px}.admin-edit-preview label{position:relative}.admin-edit-fields{display:grid;grid-template-columns:1fr 1fr;gap:11px}.admin-edit-fields label{display:grid;gap:5px;font-weight:700;font-size:13px;color:#34424d}.admin-edit-fields input,.admin-edit-fields select,.admin-edit-fields textarea{width:100%;border:1px solid #bac7dc;border-radius:6px;padding:10px;background:#fff;color:#111820}.admin-edit-fields label:nth-last-child(-n+2){grid-column:1/-1}.admin-edit-actions{grid-column:1/-1;display:flex;justify-content:flex-end;gap:10px;padding-top:4px}.admin-edit-actions .button:not(.button-dark){border:1px solid #aebed8;background:white;color:#273746}@media(max-width:650px){.admin-edit-form{grid-template-columns:1fr}.admin-edit-preview{display:grid;grid-template-columns:1fr auto;align-items:center}.admin-edit-preview img{height:155px}.admin-edit-fields{grid-template-columns:1fr 1fr}.admin-edit-actions{flex-wrap:wrap}.admin-edit-actions .button{flex:1}}
