@@ -49,6 +49,7 @@ export const policyPages = {
       ['Customer pickup', 'Select I’ll pick it up at checkout. No delivery address is needed. Pickup instructions and collection timing will be confirmed after payment review.'],
       ['Payment methods', 'Choose the Mobile Money number, Mobile Money code, or Bank of Kigali account shown at checkout. All accounts are registered to Jules UWAYEZU. Upload a clear screenshot of the completed payment; the order remains pending until the team verifies it.'],
       ['Payment instructions', '<div id="policyPaymentInstructions" class="policy-payment-details">Choose a payment method at checkout to view its details.</div>'],
+      ['Incorrect item received', 'If you receive the wrong product, contact JulesFPV Support immediately and return the item in good condition within 48 hours of delivery.'],
       ['Questions', 'For help with delivery, pickup, or payment, contact uwayezurw@gmail.com.']
     ],
     loadPaymentInstructions: true
