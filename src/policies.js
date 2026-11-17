@@ -12,12 +12,12 @@ export const policyPages = {
   },
   '/privacy': {
     title: 'Privacy Policy',
-    intro: 'This policy describes the information JulesFPV uses to run the store and handle orders.',
+    intro: 'This policy describes the information JulesFPV uses to run the store, handle orders, and provide customer support.',
     sections: [
-      ['Information we collect', 'Account details, contact information, delivery address when delivery is selected, order contents, and the payment screenshot you submit. Passwords are stored as secure password hashes, not readable passwords.'],
-      ['How we use information', 'We use this information to manage your account, review payment, prepare orders, arrange delivery or pickup, and respond to support requests.'],
-      ['Service providers and storage', 'Account and order records are stored using Firebase/Firestore. Payment proof images are stored as private media in Cloudinary and can be viewed by authorized store administrators. These providers process data to provide the store services.'],
-      ['Sharing and retention', 'JulesFPV does not sell customer information. Information is shared with service providers needed to operate the store and retained while needed to manage orders, accounts, and applicable recordkeeping.'],
+      ['Information we collect', 'Account details, contact information, delivery address when delivery is selected, order contents, payment screenshots, and messages you send through customer support. Support messages are associated with your account. Passwords are stored as secure password hashes, not readable passwords.'],
+      ['How we use information', 'We use this information to manage your account, review payment, prepare orders, arrange delivery or pickup, and respond to your support messages.'],
+      ['Service providers and storage', 'Account, order, and support conversation records are stored using Firebase/Firestore. Payment proof images are stored as private media in Cloudinary and can be viewed by authorized store administrators. These providers process data to provide the store services.'],
+      ['Sharing and retention', 'JulesFPV does not sell customer information. Information is shared with service providers needed to operate the store and retained while needed to manage orders, accounts, support conversations, and applicable recordkeeping.'],
       ['Your choices', 'For a copy or correction of your account information, or a privacy request, contact uwayezurw@gmail.com.']
     ]
   },

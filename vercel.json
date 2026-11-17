@@ -5,6 +5,8 @@
   "rewrites": [
     { "source": "/product/:id", "destination": "/index.html" },
     { "source": "/shop", "destination": "/index.html" },
+    { "source": "/support", "destination": "/index.html" },
+    { "source": "/admin", "destination": "/index.html" },
     { "source": "/terms", "destination": "/index.html" },
     { "source": "/privacy", "destination": "/index.html" },
     { "source": "/about", "destination": "/index.html" },
