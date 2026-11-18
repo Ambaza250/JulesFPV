@@ -1,4 +1,18 @@
 export const policyPages = {
+  '/build-advice': {
+    title: 'FPV Build Advice',
+    intro: 'A practical walkthrough for planning, assembling, and checking your FPV quad. Parts vary between builds, so use each component’s manual and compatibility notes as your final reference.',
+    sections: [
+      ['1. Plan a compatible build', 'Choose a frame size and intended flying style first. Match the motor size and KV, propeller size, battery cell count, and flight controller/ESC ratings to that frame and to one another. Check connector types, mounting patterns, physical clearance, and whether your video transmitter works with your goggles and antennas. If a part’s limits are unclear, ask before powering it.'],
+      ['2. Prepare your workspace', 'Gather the frame, motors, flight controller and ESC, receiver, video system, battery and matching charger, props, fasteners, soldering iron, solder, heat-shrink, and basic hex drivers. Work on a clean, well-lit, nonconductive surface. Keep the battery disconnected while assembling and soldering; remove propellers during every bench setup and test.'],
+      ['3. Build the frame and fit the motors', 'Assemble the frame loosely first, checking the frame maker’s orientation and screw lengths. Mount each motor to an arm with screws that do not reach or press against the motor windings. Route motor wires neatly toward the ESC, away from propellers and sharp edges, then secure them without pinching.'],
+      ['4. Install and wire the electronics', 'Mount the ESC and flight controller with the supplied soft mounts and the correct orientation. Confirm the board pinout before soldering: connect the battery leads to the ESC, motors to the ESC, and the flight controller to the ESC harness or pads. Then connect the receiver and video system using their documented voltage, ground, signal, and UART connections. Insulate exposed joints and add strain relief.'],
+      ['5. Configure before fitting propellers', 'Connect to your flight controller configurator with props removed. Confirm board orientation, receiver protocol and channel order, arming behavior, motor order and direction, failsafe, and video settings. Use the configurator’s motor test carefully with the battery secured and people clear. Reverse motor direction in software when supported, or follow the ESC maker’s procedure.'],
+      ['6. Inspect, then make a cautious first flight', 'Check every fastener, solder joint, wire route, antenna mount, and battery strap. Verify that no wire can touch a motor or propeller and that the battery voltage and cell count are correct. Fit the correct propellers only after bench checks pass, with each prop’s orientation matched to the configured motor direction. Make the first hover in a clear, open area, land promptly, and check for loose parts or unusual heat.'],
+      ['Need a hand choosing parts?', 'Send us your frame size, flying style, and the parts you already have. We can help check fit and compatibility before you order. Email uwayezurw@gmail.com or message JulesFPV Support.']
+    ],
+    shopCta: true
+  },
   '/promise': {
     title: 'The JulesFPV Promise',
     intro: 'Choosing parts for a build should feel exciting, not uncertain. We are here to make every step from choosing gear to getting it in the air feel clearer.',
