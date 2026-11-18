@@ -4,15 +4,6 @@
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api" },
-    { "source": "/product/:id", "destination": "/index.html" },
-    { "source": "/shop", "destination": "/index.html" },
-    { "source": "/support", "destination": "/index.html" },
-    { "source": "/admin", "destination": "/index.html" },
-    { "source": "/terms", "destination": "/index.html" },
-    { "source": "/privacy", "destination": "/index.html" },
-    { "source": "/about", "destination": "/index.html" },
-    { "source": "/promise", "destination": "/index.html" },
-    { "source": "/delivery-payment", "destination": "/index.html" }
-    { "source": "/build-advice", "destination": "/index.html" }
-  ]
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+]
 }
