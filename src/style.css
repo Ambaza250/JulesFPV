@@ -192,3 +192,7 @@
 @media(max-width:430px){
   .header-actions .header-account{display:flex!important;width:40px!important;min-width:40px!important;height:40px!important;min-height:40px!important}
 }
+@media(max-width:700px){
+  .header-actions .header-cart{display:none!important}
+  .nav.mobile-open .menu-cart{display:flex!important}
+}
