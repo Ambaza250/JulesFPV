@@ -196,3 +196,100 @@
   .header-actions .header-cart{display:none!important}
   .nav.mobile-open .menu-cart{display:flex!important}
 }
+
+/* Shared dark theme surfaces and accessible header theme switch. */
+.theme-toggle{width:42px;height:42px;flex:none;display:grid;place-items:center;border:1px solid #d7dfeb;border-radius:50%;background:#fff;color:#174bd1;transition:background .18s,color .18s,border-color .18s,transform .18s}
+.theme-toggle:hover{transform:translateY(-1px);background:#eef3ff}
+.theme-toggle:focus-visible{outline:3px solid #174bd144;outline-offset:2px}
+.theme-icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.theme-moon{display:none}
+@media(max-width:700px){.header-actions{gap:8px}.theme-toggle{width:40px;height:40px}}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0b0f14;--surface:#131a22;--surface-2:#1c2430;--surface-3:#252f3d;--border:rgba(255,255,255,.08);--ink:#e6edf3;--muted:#94a3b8;--blue:#4c7cf7;--orange:#f06a3a;--lime:#b8e04a;--paper:#0b0f14;--line:#2a3441;--white:#131a22;--navy:#090e13}
+html[data-theme="dark"] body{background:var(--bg);color:var(--ink)}
+html[data-theme="dark"] .header{background:rgba(11,15,20,.96);box-shadow:0 1px 0 var(--border)}
+html[data-theme="dark"] .topline{background:#090e13;color:#94a3b8}
+html[data-theme="dark"] .brand-name small,html[data-theme="dark"] .nav-links a,html[data-theme="dark"] .search-icon,html[data-theme="dark"] .searchbox kbd{color:var(--muted)}
+html[data-theme="dark"] .nav{border-color:var(--border)}
+html[data-theme="dark"] .searchbox,html[data-theme="dark"] .filters,html[data-theme="dark"] .filter-block,html[data-theme="dark"] .product-card,html[data-theme="dark"] .shop-page-toolbar,html[data-theme="dark"] .shop-page-pagination,html[data-theme="dark"] .info-document,html[data-theme="dark"] .support-full-layout,html[data-theme="dark"] .support-thread,html[data-theme="dark"] .support-panel,html[data-theme="dark"] .drawer,html[data-theme="dark"] .modal,html[data-theme="dark"] .proof-modal,html[data-theme="dark"] .admin-row,html[data-theme="dark"] .order-review,html[data-theme="dark"] .my-order,html[data-theme="dark"] .approved-kit,html[data-theme="dark"] .payment-box,html[data-theme="dark"] .admin-notice{background:var(--surface);color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .searchbox{background:#1a222d!important;border-color:var(--line)!important}
+html[data-theme="dark"] .searchbox:focus-within{border-color:#3b6ef5!important;box-shadow:0 0 0 3px #3b6ef538}
+html[data-theme="dark"] input,html[data-theme="dark"] select,html[data-theme="dark"] textarea{background:#1a222d;color:var(--ink);border-color:#34414f}
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder{color:#8b9aab}
+html[data-theme="dark"] .hero{background:#172229}
+html[data-theme="dark"] .hero-visual{background:radial-gradient(ellipse at 58% 52%,#24352f 0,#1c2a2a 40%,#172229 72%)}
+html[data-theme="dark"] .hero-copy>p,html[data-theme="dark"] .section-head p,html[data-theme="dark"] .promise-intro p,html[data-theme="dark"] .promise-card p,html[data-theme="dark"] .newsletter p,html[data-theme="dark"] .shop-page-hero p,html[data-theme="dark"] .support-page>header p,html[data-theme="dark"] .product-description{color:#aebdcb}
+html[data-theme="dark"] .category-tile,html[data-theme="dark"] .promise-card,html[data-theme="dark"] .pilot-note,html[data-theme="dark"] .newsletter,html[data-theme="dark"] .shop-page-hero,html[data-theme="dark"] .product-detail-image,html[data-theme="dark"] .product-image,html[data-theme="dark"] .product-detail,html[data-theme="dark"] .shop-page-toolbar label,html[data-theme="dark"] .no-results,html[data-theme="dark"] .search-suggestions,html[data-theme="dark"] .search-suggestions a,html[data-theme="dark"] .support-thread-list{background-color:var(--surface);color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .product-image{background:#1a222d!important}
+html[data-theme="dark"] .promise-icon,html[data-theme="dark"] .icon-blue,html[data-theme="dark"] .icon-orange,html[data-theme="dark"] .add-cart,html[data-theme="dark"] .active-filters button,html[data-theme="dark"] .policy-payment-details{background:#202d3d;color:#a9c2ff;border-color:#35475c}
+html[data-theme="dark"] .product-badge{background:#2b3828;color:var(--lime)}
+html[data-theme="dark"] .wish{background:#1c2430d9;color:#cbd5e1}
+html[data-theme="dark"] .filter-button,html[data-theme="dark"] .view-toggle button,html[data-theme="dark"] .shop-pagination button,html[data-theme="dark"] .filter-heading button,html[data-theme="dark"] .admin-tab,html[data-theme="dark"] .auth-tab{color:#c7d2df}
+html[data-theme="dark"] .admin-edit-preview img,html[data-theme="dark"] .admin-edit-color-preview{background:#1a222d;border-color:#34414f}
+html[data-theme="dark"] .approved-kit-item{background:#1c2430;border-color:var(--line)}
+html[data-theme="dark"] .order-status{background:#252f3d;color:#c4ced9}
+html[data-theme="dark"] .verified{background:#26352a;color:var(--lime)}
+html[data-theme="dark"] .rejected{background:#482d2b;color:#ffb09a}
+html[data-theme="dark"] .pending-verification{background:#463d27;color:#efd38a}
+html[data-theme="dark"] .admin-notice{color:#efd38a}
+html[data-theme="dark"] .cookie-bar{background:#1c2430;color:#cbd5e1;border-top:1px solid var(--border);box-shadow:0 -12px 32px #0004}
+html[data-theme="dark"] .category-tile small,html[data-theme="dark"] .product-category,html[data-theme="dark"] .old-price,html[data-theme="dark"] .stock,html[data-theme="dark"] .support-contact,html[data-theme="dark"] .support-thread small,html[data-theme="dark"] .support-thread time,html[data-theme="dark"] .support-thread span{color:#a7b2bf}
+html[data-theme="dark"] .footer{background:#0b1117;color:#e8edf3}
+html[data-theme="dark"] .footer a,html[data-theme="dark"] .footer p,html[data-theme="dark"] .footer-bottom{color:#a7b2bf}
+html[data-theme="dark"] .support-compose,html[data-theme="dark"] .support-page #supportPageForm{background:#1a2530;border-color:#34414d}
+html[data-theme="dark"] .support-message{background:#273545;color:#e8edf3}
+html[data-theme="dark"] .support-thread.selected{background:#203b62;border-color:#315b9d}
+html[data-theme="dark"] .cart-line,html[data-theme="dark"] .my-orders,html[data-theme="dark"] .filter-heading,html[data-theme="dark"] .drawer-head{border-color:#34414d}
+html[data-theme="dark"] .theme-toggle{background:#263544;border-color:#465564;color:#f4c95d}
+html[data-theme="dark"] .theme-toggle:hover{background:#324354}
+html[data-theme="dark"] .theme-sun{display:none}
+html[data-theme="dark"] .theme-moon{display:block}
+html[data-theme="dark"] .menu-account,html[data-theme="dark"] .menu-cart{background:#1a2530!important;border-color:#34414d!important}
+html[data-theme="dark"] .social-contact-dock a:not([aria-label="Instagram"]):not([aria-label="Facebook"]):not(.whatsapp-contact){background:#1a2530;color:#8eb0ff;border-color:#34414d}
+html[data-theme="dark"] .social-contact-dock a:focus-visible{box-shadow:0 0 0 3px #6c91df55,0 5px 18px #0008}
+html[data-theme="dark"] .cart-trigger em{border-color:#1a2530}
+@media(max-width:430px){html[data-theme="dark"] .nav.mobile-open{background:#121a22}}
+html[data-theme="dark"] .footer{background:#090e13;color:#e6edf3}
+html[data-theme="dark"] .footer a,html[data-theme="dark"] .footer p,html[data-theme="dark"] .footer-bottom{color:#94a3b8}
+html[data-theme="dark"] .support-compose,html[data-theme="dark"] .support-page #supportPageForm{background:var(--surface);border-color:var(--line)}
+html[data-theme="dark"] .support-message{background:#252f3d;color:#e6edf3}
+html[data-theme="dark"] .support-thread.selected{background:#202f49;border-color:#3b6ef5}
+html[data-theme="dark"] .cart-line,html[data-theme="dark"] .my-orders,html[data-theme="dark"] .filter-heading,html[data-theme="dark"] .drawer-head{border-color:var(--line)}
+html[data-theme="dark"] .theme-toggle{background:#1c2430;border-color:#354253;color:#f4c95d}
+html[data-theme="dark"] .theme-toggle:hover{background:#252f3d}
+html[data-theme="dark"] .theme-sun{display:none}
+html[data-theme="dark"] .theme-moon{display:block}
+html[data-theme="dark"] .menu-account,html[data-theme="dark"] .menu-cart{background:#1c2430!important;border-color:#2a3441!important}
+html[data-theme="dark"] .social-contact-dock a:not([aria-label="Instagram"]):not([aria-label="Facebook"]):not(.whatsapp-contact){background:#1c2430;color:#a9c2ff;border-color:#2a3441}
+html[data-theme="dark"] .social-contact-dock a:focus-visible{box-shadow:0 0 0 3px #3b6ef559,0 5px 18px #0006}
+html[data-theme="dark"] .cart-trigger em{border-color:#131a22}
+html[data-theme="dark"] .icon-link:hover,html[data-theme="dark"] .text-cta:hover,html[data-theme="dark"] .footer a:hover{color:#7fa2ff}
+html[data-theme="dark"] .searchbox button,html[data-theme="dark"] .button:not(.button-orange),html[data-theme="dark"] .admin-support-button,html[data-theme="dark"] .support-compose button,html[data-theme="dark"] .support-launch,html[data-theme="dark"] .apply-filter{background:#3b6ef5!important;border-color:#3b6ef5!important;color:#f8fafc!important}
+html[data-theme="dark"] .searchbox button:hover,html[data-theme="dark"] .button:not(.button-orange):hover,html[data-theme="dark"] .admin-support-button:hover,html[data-theme="dark"] .support-compose button:hover,html[data-theme="dark"] .support-launch:hover,html[data-theme="dark"] .apply-filter:hover{background:#4c7cf7!important;box-shadow:0 0 20px #3b6ef533}
+html[data-theme="dark"] .button-orange,html[data-theme="dark"] .hero-buy,html[data-theme="dark"] .buy-now{background:#f06a3a!important;border-color:#f06a3a!important;color:#fff!important}
+html[data-theme="dark"] a:not(.button):not(.brand):not(.social-contact-dock a){text-decoration-color:transparent}
+html[data-theme="dark"] a:not(.button):not(.brand):not(.social-contact-dock a):hover{color:#7fa2ff;text-decoration:underline;text-decoration-color:currentColor}
+html[data-theme="dark"] :focus-visible{outline-color:#3b6ef5;box-shadow:0 0 0 3px #3b6ef538}
+html[data-theme="dark"] .product-card{background:var(--surface);border-color:var(--line);transition:transform .2s,border-color .2s,box-shadow .2s}
+html[data-theme="dark"] .product-card:hover{transform:translateY(-3px);border-color:#3b6ef577;box-shadow:0 12px 30px #0004,0 0 0 1px #3b6ef522}
+html[data-theme="dark"] .drawer,html[data-theme="dark"] .modal,html[data-theme="dark"] .proof-modal,html[data-theme="dark"] .support-panel,html[data-theme="dark"] .search-suggestions{background:var(--surface-2);border-color:var(--line)}
+html[data-theme="dark"] .nav.mobile-open{background:#131a22}
+html[data-theme="dark"] .cart-empty,html[data-theme="dark"] .cart-footer,html[data-theme="dark"] .my-orders{background:transparent}
+html[data-theme="dark"] .cart-footer{border-color:var(--line)}
+html[data-theme="dark"] .support-widget .support-panel>header{background:#202d3d}
+html[data-theme="dark"] .rating{color:#eeb45d}
+/* Product imagery and dark-theme heading contrast refinements. */
+.product-image:before,.product-image:after{display:none}
+.product-card .wish{display:none}
+.product-image{background:#e8edf2!important;border-radius:12px!important;padding:10px;isolation:isolate}
+.product-image img{box-sizing:border-box;max-width:86%;max-height:calc(100% - 14px);padding:7px;border:1px solid #e1e7ed;border-radius:11px;background:#f8fafc;box-shadow:0 3px 10px #17212b12;mix-blend-mode:normal}
+html[data-theme="dark"] .product-image{background:#202b35!important}
+html[data-theme="dark"] .product-image img{background:#e7edf3;border-color:#f5f7fa;box-shadow:0 5px 15px #0004}
+html[data-theme="dark"] .hero-product-copy .eyebrow{color:#91adff}
+html[data-theme="dark"] .hero-product-copy h2{color:#f0f3f6}
+html[data-theme="dark"] .hero-product-copy p{color:#b8c4d1}
+html[data-theme="dark"] .hero-product-copy strong{color:#a9c2ff}
+html[data-theme="dark"] .hero-slide-loading{color:#c2ccd7}
+html[data-theme="dark"] .shop-page-hero{background:transparent!important;border-color:transparent!important;box-shadow:none!important}
+html[data-theme="dark"] .shop-page-hero h1{color:#f8fafc}
+html[data-theme="dark"] .shop-page-hero h1 span{color:#78a0ff}
+html[data-theme="dark"] .shop-page-hero .eyebrow{color:#a6baec}

@@ -1,5 +1,6 @@
 import { policyPages, renderInfoPage } from './policies.js';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const themeToggle=$('#themeToggle');function setTheme(theme){const dark=theme==='dark';document.documentElement.dataset.theme=dark?'dark':'light';try{localStorage.setItem('julesfpv_theme',dark?'dark':'light')}catch{}if(themeToggle){themeToggle.setAttribute('aria-label',`Switch to ${dark?'light':'dark'} mode`);themeToggle.title=`Switch to ${dark?'light':'dark'} mode`}const themeColor=$('meta[name="theme-color"]');if(themeColor)themeColor.content=dark?'#111820':'#f6f8fc'}if(themeToggle){setTheme(document.documentElement.dataset.theme||'light');themeToggle.addEventListener('click',()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark'))}
 const money=n=>'RWF '+Number(n).toLocaleString('en-US');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let products=[],cart=loadCart(),category='All',searchTerm='',stockOnly=false,priceBounds=[0,Infinity],authMode='signin',isAdmin=false,checkoutAfterAuth=false,toastTimer;
