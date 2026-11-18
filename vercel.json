@@ -13,5 +13,6 @@
     { "source": "/about", "destination": "/index.html" },
     { "source": "/promise", "destination": "/index.html" },
     { "source": "/delivery-payment", "destination": "/index.html" }
+    { "source": "/build-advice", "destination": "/index.html" }
   ]
 }
